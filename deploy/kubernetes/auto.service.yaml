@@ -4,11 +4,11 @@ metadata:
   name: blue
 spec:
   ports:
-  - name: http1
-    port: 80
-    protocol: TCP
-    targetPort: 8080
+    - name: http1
+      port: 80
+      protocol: TCP
+      targetPort: 8080
   selector:
     app: blue
   sessionAffinity: None
-  type: NodePort
+  type: LoadBalancer
